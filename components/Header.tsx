@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 
 const Header = () => {
     const pathname = usePathname()
@@ -11,7 +12,9 @@ const Header = () => {
 
   return (
     <header className='flex my-10 justify-between gap-5'>
-        <Link href="/">BookWise</Link>
+        <Link href="/">
+            <Image src="/icons/logo.svg" alt="logo" width={40} height={40} />
+        </Link>
         
         <ul className="flex flex-row items items-center gap-8">
             <li>
