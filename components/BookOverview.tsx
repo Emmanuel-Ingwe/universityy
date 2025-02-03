@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import BookCover from './BookCover'
 
 const BookOverview = ({ title, author, genre, rating, total_copies, available_copies, description, color, cover, }: Book ) => {
   return (
@@ -40,7 +41,20 @@ const BookOverview = ({ title, author, genre, rating, total_copies, available_co
 
         <div className="relative flex flex-1 justify-center">
             <div className="relative">
-                
+                <BookCover
+                    variant="wide"
+                    coverImage={cover}
+                    coverColor={color}
+                    className="z-10"
+                 />
+
+                 <div className="abssolute left-16 top-10 rotate-12 opacity-40 max-sm:hidden">
+                    <BookCover
+                        variant="wide"
+                        coverImage={cover}
+                        coverColor={color}
+                    />
+                 </div>
             </div>
         </div>
     </section>
