@@ -7,6 +7,7 @@ interface Book {
     cover: string;
     total_copies: number;
     color: string;
+    isLoadnedBook: boolean;
     available_copies: number;
     description: string;
     coverColor: string;
