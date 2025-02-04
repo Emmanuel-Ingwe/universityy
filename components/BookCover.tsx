@@ -41,15 +41,15 @@ const BookCover = ({
       <BookCoverSvg coverColor={coverColor} />
 
       <div
-        className="absolute z-10"
-        style={{ left: "12%", width: "87.5%", height: "88%" }}
-      >
-        <Image
-          src={coverImage}
-          alt="Book cover"
-          fill
-          className="rounded-sm object-fill"
-                 />
+            className="absolute z-10"
+            style={{ left: "12%", width: "87.5%", height: "88%" }}
+        >
+            <Image
+            src={coverImage}
+            alt="Book cover"
+            fill
+            className="rounded-sm object-fill"
+            />
       </div>
     </div>
   );
