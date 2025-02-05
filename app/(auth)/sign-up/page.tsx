@@ -1,4 +1,4 @@
-import { signUpSchema } from '@/validations'
+import { signUpSchema } from '@/lib/validations'
 import React from 'react'
 import AuthForm from '@/components/AuthForm'
 
